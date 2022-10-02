@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="main.css">
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+   <input type="text" readonly class="resultTop"value=0>
+   
+   <div class="key">
+    <div class="mainBTN">
+     <div class="numContainer">
+       <button id="num9" class="numBTN" onclick="input('9')">9</button>
+       <button id="num8" class="numBTN" onclick="input('8')">8</button>
+       <button id="num7" class="numBTN" onclick="input('7')">7</button><br>
+       <button id="num6" class="numBTN" onclick="input('6')">6</button>
+       <button id="num5" class="numBTN" onclick="input('5')">5</button>
+       <button id="num4" class="numBTN" onclick="input('4')">4</button><br>
+       <button id="num3" class="numBTN" onclick="input('3')">3</button>
+       <button id="num2" class="numBTN" onclick="input('2')">2</button>
+       <button id="num1" class="numBTN" onclick="input('1')">1</button><br>
+       <button id="numDp" class="numBTN" onclick="input('.')">.</button>
+       <button id="num00" class="numBTN" onclick="input('00')">00</button>
+       <button id="num0" class="numBTN" onclick="input('0')">0</button>
+     </div>
+     <div id="signContainer">
+       <button id="numAdd" class="signBTN" onclick="signInput('+')">+</button>
+       <button id="numSub" class="signBTN" onclick="signInput('-')">-</button>
+       <button id="numMul" class="signBTN" onclick="signInput('*')">*</button>
+       <button id="numDiv" class="signBTN" onclick="signInput('/')">/</button>
+     </div>
+    </div>
+    <div class="resultContainer">
+      <button id="numAc" class="viewCTRL" onclick="clearB()">AC</button>
+      <button id="numResult" class="viewCTRL" onclick="resultView()">=</button>
+    </div>
+   </div>
+ 
+ 
+ 
+ <script src="main.js"></script>
+ </body>
+ </html>
